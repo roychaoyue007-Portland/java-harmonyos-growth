@@ -37,10 +37,22 @@ GitHub 仓库：
 - 第 5 个月：鸿蒙客户端、前端基础、Git / GitHub、工程化。
 - 第 6 个月：部署与完整全栈项目。
 
+## 学习计划唯一入口
+
+以后每天学习时，默认只读取下面这两个文件：
+
+1. `plan/current-plan.md`：当前执行入口，说明今天应该按哪个计划走。
+2. `plan/weekly-plan.md`：本周每天的具体主题、任务和验收方向。
+
+`plan/six-month-fullstack-plan.md` 只作为长期路线图，不直接决定“今天学什么”。
+
+`archive/old-30-day-plan/` 是旧计划归档，只用于历史参考。除非我明确说“查看旧 30 天计划”，否则不要按里面的内容安排学习。
+
 详细计划见：
 
-- `plan/six-month-fullstack-plan.md`
+- `plan/current-plan.md`
 - `plan/weekly-plan.md`
+- `plan/six-month-fullstack-plan.md`
 - `plan/github-setup.md`
 
 ## 目录说明
@@ -70,23 +82,20 @@ GitHub 仓库：
 
 ## 当前学习入口
 
-今天从 Day 01 开始：
+当前主线：6 个月全栈成长计划 / Week 01。
 
-- `notes/day-01-file-path-command-script.md`
-- `dictionary/tech-dictionary.md`
+今天学什么，以 `plan/current-plan.md` 和 `plan/weekly-plan.md` 为准。
 
-Day 01 主题：
-
-```text
-文件、文件夹、路径、命令、脚本
-```
+当前 Week 01 主题：计算机导论与操作系统入门。
 
 ## 使用方式
 
 每天开始学习前，可以对 Codex 或 ChatGPT 说：
 
 ```text
-继续全栈学习计划，今天是 Day XX
+继续 E:\Codex\projects\java-harmonyos-growth 的 6 个月全栈学习计划。
+请先读取 plan/current-plan.md，再按 plan/weekly-plan.md 执行 Day XX。
+不要使用 archive/old-30-day-plan 里的旧 30 天计划。
 ```
 
 每天学完后，提交：
@@ -112,3 +121,4 @@ git add .
 git commit -m "day XX notes"
 git push
 ```
+
