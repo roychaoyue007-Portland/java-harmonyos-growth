@@ -54,6 +54,7 @@ GitHub 仓库：
 - `plan/weekly-plan.md`
 - `plan/six-month-fullstack-plan.md`
 - `plan/github-setup.md`
+- `plan/chatgpt-daily-prompt-template.md`
 
 ## 目录说明
 
@@ -99,6 +100,12 @@ GitHub 仓库：
 备注：如果无法正确开始，请确认计划路径是否找到。
 ```
 
+如果要让 Codex 生成一段可以直接粘贴到 ChatGPT 网页版的每日学习提示词，可以在 Codex 新对话中说：
+
+```text
+使用 $fullstack-study-prompt，生成 Day XX 发给 ChatGPT 的学习提示词。
+```
+
 每天学完后，提交：
 
 ```text
@@ -122,4 +129,3 @@ git add .
 git commit -m "day XX notes"
 git push
 ```
-
