@@ -93,10 +93,10 @@ GitHub 仓库：
 每天开始学习前，可以对 Codex 或 ChatGPT 说：
 
 ```text
-继续 E:\Codex\projects\java-harmonyos-growth 的 6 个月全栈学习计划。
-请先读取 plan/current-plan.md，再按 plan/weekly-plan.md 执行 Day XX。
-不要使用 archive/old-30-day-plan 里的旧 30 天计划。
+继续全栈学习计划，今天是 Day XX
 ```
+```text
+备注：如果无法正确开始，请确认计划路径是否找到。
 
 每天学完后，提交：
 
