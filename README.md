@@ -4,6 +4,10 @@
 
 当前目标不是先追某一个框架，而是先听懂软件开发世界的基础语言，再逐步进入 Java、后端、数据库、鸿蒙、前端基础、GitHub 和部署。
 
+GitHub 仓库：
+
+- https://github.com/roychaoyue007-Portland/java-harmonyos-growth
+
 ## 总目标
 
 6 个月后，我希望能独立完成一个完整项目：
@@ -37,6 +41,7 @@
 
 - `plan/six-month-fullstack-plan.md`
 - `plan/weekly-plan.md`
+- `plan/github-setup.md`
 
 ## 目录说明
 
@@ -94,3 +99,16 @@ Day 01 主题：
 ```
 
 然后让 AI 帮我检查是否通过当天学习。
+
+## GitHub 管理
+
+本项目已经接入 Git 和 GitHub。
+
+每天学习资料更新后，常用流程：
+
+```powershell
+git status
+git add .
+git commit -m "day XX notes"
+git push
+```

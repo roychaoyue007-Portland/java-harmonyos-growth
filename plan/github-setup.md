@@ -2,6 +2,10 @@
 
 目标：把 `java-harmonyos-growth` 学习项目交给 Git 和 GitHub 管理。
 
+GitHub 仓库：
+
+- https://github.com/roychaoyue007-Portland/java-harmonyos-growth
+
 ## 先理解 5 个词
 
 - Git：本地版本管理工具，记录文件变化。
@@ -16,39 +20,67 @@
 - [x] 初始化本地 Git 仓库
 - [x] 创建 `.gitignore`
 - [x] 完成第一次本地提交
-- [ ] 创建 GitHub 远程仓库
-- [ ] 连接远程仓库
-- [ ] 推送到 GitHub
+- [x] 创建 GitHub 远程仓库
+- [x] 连接远程仓库 `origin`
+- [x] 推送 `main` 分支到 GitHub
 
-## 创建 GitHub 远程仓库
+## 当前仓库信息
 
-在 GitHub 网页创建一个新仓库：
+本地仓库：
 
 ```text
-java-harmonyos-growth
+E:\Codex\projects\java-harmonyos-growth
 ```
 
-建议：
+远程仓库：
 
-- Public 或 Private 都可以。
-- 不要勾选自动创建 README，因为本地已经有 README。
+```text
+https://github.com/roychaoyue007-Portland/java-harmonyos-growth.git
+```
 
-## 连接远程仓库并推送
+当前主分支：
 
-把下面地址换成自己的 GitHub 仓库地址：
-
-```powershell
-git remote add origin https://github.com/你的用户名/java-harmonyos-growth.git
-git branch -M main
-git push -u origin main
+```text
+main
 ```
 
 ## 每天学习后的固定流程
 
+进入项目目录：
+
+```powershell
+cd E:\Codex\projects\java-harmonyos-growth
+```
+
+查看变化：
+
 ```powershell
 git status
+```
+
+暂存所有变化：
+
+```powershell
 git add .
-git commit -m "day 01 notes"
+```
+
+提交变化：
+
+```powershell
+git commit -m "day XX notes"
+```
+
+推送到 GitHub：
+
+```powershell
 git push
 ```
+
+## 常见命令解释
+
+- `git status`：查看哪些文件发生了变化。
+- `git add .`：把当前目录下所有变化加入待提交区。
+- `git commit -m "..."`：保存一次版本记录。
+- `git push`：把本地提交上传到 GitHub。
+- `git log --oneline`：查看提交历史。
 
