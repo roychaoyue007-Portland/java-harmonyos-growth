@@ -1,0 +1,27 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Java build outputs
+*.class
+target/
+build/
+out/
+
+# Node / frontend outputs, for later months
+node_modules/
+dist/
+.vite/
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+
+# Local environment files
+.env
+.env.*
+
