@@ -29,3 +29,20 @@
 | run | 运行 | Click the icon to run the program. |
 | load | 加载 | The operating system loads the program into memory. |
 | storage | 存储 | A disk is used for long-term storage. |
+
+## Day 03
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| program | 程序 | A program is a set of instructions stored on disk. |
+| process | 进程 | The operating system creates a process when a program starts. |
+| thread | 线程 | A process can contain one or more threads. |
+| task manager | 任务管理器 | Open Task Manager to check running processes. |
+| run | 运行 | Click the icon to run the program. |
+| running | 正在运行的 | A running program usually has a process. |
+| memory usage | 内存占用 | Task Manager shows the memory usage of each process. |
+| CPU usage | CPU 占用 | High CPU usage can make the computer slow. |
+| disk usage | 磁盘占用 / 磁盘读写 | High disk usage means the disk is busy reading or writing data. |
+| not responding | 未响应 | If a program is not responding, you can end the task. |
+| end task | 结束任务 | Use End task to close a frozen program. |
+| resource | 资源 | A process uses system resources such as memory and CPU time. |
