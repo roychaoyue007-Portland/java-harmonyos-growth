@@ -80,3 +80,15 @@
 | class file | class 文件 | Hello.class is generated after compilation. |
 | compile-time error | 编译错误 | A compile-time error happens before the program runs. |
 | runtime error | 运行时错误 | A runtime error happens while the program is running. |
+
+## Day 06
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| client | 客户端 | The browser is a client. |
+| server | 服务端 / 服务器 | The server handles requests. |
+| IP address | IP 地址 | An IP address identifies a device on a network. |
+| port | 端口 | Port 8080 is often used by Java web apps. |
+| HTTP | 超文本传输协议 | HTTP defines how clients and servers communicate. |
+| request | 请求 | The client sends a request. |
+| response | 响应 | The server returns a response. |
