@@ -46,3 +46,21 @@
 | not responding | 未响应 | If a program is not responding, you can end the task. |
 | end task | 结束任务 | Use End task to close a frozen program. |
 | resource | 资源 | A process uses system resources such as memory and CPU time. |
+
+## Day 04
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| install | 安装 | Install Git on your computer. |
+| installation | 安装过程 / 安装结果 | The installation creates files on disk. |
+| configure | 配置 | Configure PATH after installing the JDK. |
+| configuration | 配置 | The configuration tells the program how to work. |
+| environment variable | 环境变量 | PATH is an environment variable. |
+| PATH | PATH 环境变量 | Windows uses PATH to find commands. |
+| version | 版本 | Check the Java version with java -version. |
+| version number | 版本号 | Git 2.45.1 is a version number. |
+| command path | 命令路径 | where.exe java shows the command path. |
+| executable file | 可执行文件 | git.exe is an executable file. |
+| not recognized | 无法识别 | The command is not recognized if Windows cannot find it. |
+| system setting | 系统设置 | Environment variables are system settings. |
+
