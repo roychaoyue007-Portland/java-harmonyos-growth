@@ -64,3 +64,19 @@
 | not recognized | 无法识别 | The command is not recognized if Windows cannot find it. |
 | system setting | 系统设置 | Environment variables are system settings. |
 
+## Day 05
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| source code | 源代码 | Source code is written by programmers. |
+| compile | 编译 | Use javac to compile a Java source file. |
+| compiler | 编译器 | A compiler converts source code into another form. |
+| run | 运行 | Run the program with java Hello. |
+| runtime | 运行时 / 运行时环境 | The JVM is the runtime environment for Java programs. |
+| runtime environment | 运行时环境 | A runtime environment supports a program while it is running. |
+| bytecode | 字节码 | A .class file contains Java bytecode. |
+| JVM | Java 虚拟机 | The JVM loads and executes Java bytecode. |
+| interpreted execution | 解释执行 | Interpreted execution reads and executes code step by step. |
+| class file | class 文件 | Hello.class is generated after compilation. |
+| compile-time error | 编译错误 | A compile-time error happens before the program runs. |
+| runtime error | 运行时错误 | A runtime error happens while the program is running. |
