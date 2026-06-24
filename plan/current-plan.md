@@ -13,7 +13,7 @@
 
 - `plan/weekly-plan.md` 是当前每天学习安排的唯一执行计划。
 - Day 编号在整个 6 个月计划中连续累加，不因新周或新月重置。
-- Week 02 · Day 01 只表示周内位置，正式编号仍为 Day 08。
+- 周内位置只用于说明这是本周第几天；正式编号继续使用 Day 08、Day 09……
 - `plan/six-month-fullstack-plan.md` 是长期路线图，只用于理解大方向。
 - `archive/old-30-day-plan/` 是旧计划归档，不作为当前学习依据。
 - 除非明确要求查看旧计划，否则不要采用旧计划里的 Day 编号和任务。
@@ -22,16 +22,16 @@
 
 - Month 01：计算机导论与操作系统入门。
 - Week 02：命令行操作与基础排错。
-- 当前学习日：Day 08（Week 02 · Day 01）。
+- 当前学习日：Day 09（Week 02 · Day 02）。
 - 计划开始日期：2026-06-23。
 
 ## 当前任务
 
-Day 08 主题：终端、Shell、PowerShell、命令与参数。
+Day 09 主题：文件系统、绝对路径、相对路径、当前目录与父目录。
 
-正式任务文件：
+任务依据：
 
-- `notes/day-08-terminal-shell-powershell-command-parameter.md`
-- `practice/day-08/笔记.md`
+- `plan/weekly-plan.md` 中的 Day 09 安排。
+- 开始学习时再生成 Day 09 正式任务和 ChatGPT 提示词。
 
-完成 Day 08 学习和验收后，再进入 Day 09。
+Day 08 已于 2026-06-24 完成验收并通过。完成 Day 09 学习和验收后，再进入 Day 10。

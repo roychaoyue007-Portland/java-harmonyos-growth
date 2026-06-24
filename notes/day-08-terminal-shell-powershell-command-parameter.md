@@ -275,3 +275,5 @@ PowerShell 是 Windows 上常用的一种 Shell。
 执行外部命令时，PATH 可以帮助系统找到对应程序。
 Get-Command 用来调查命令，Get-Help 用来学习命令。
 ```
+
+https://chatgpt.com/share/6a3bf15a-97bc-83ea-912a-436a029e20fe

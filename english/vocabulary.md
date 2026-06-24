@@ -92,3 +92,30 @@
 | HTTP | 超文本传输协议 | HTTP defines how clients and servers communicate. |
 | request | 请求 | The client sends a request. |
 | response | 响应 | The server returns a response. |
+
+## Day 08
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| terminal | 终端 | The terminal receives my input and displays the result. |
+| Shell | Shell / 命令解释程序 | A Shell reads, parses, and executes commands. |
+| PowerShell | PowerShell | PowerShell is a Shell commonly used on Windows. |
+| command | 命令 | Get-ChildItem is a PowerShell command. |
+| parameter | 参数 | The Path parameter specifies which location to inspect. |
+| argument | 参数值 / 实际传入内容 | The dot is the argument passed to the Path parameter. |
+| switch parameter | 开关参数 | File is a switch parameter that filters the result. |
+| command name | 命令名 | Java is the command name in java -version. |
+| command type | 命令类型 | Get-Command shows the command type. |
+| external program | 外部程序 | java.exe is an external program. |
+| executable file | 可执行文件 | PowerShell uses PATH to find an executable file. |
+| current directory | 当前目录 | A dot usually represents the current directory. |
+| parse | 解析 | PowerShell parses the command name and its arguments. |
+| execute | 执行 | The Shell executes the command after parsing it. |
+
+### Day 08 朗读句
+
+1. The terminal receives input and displays output.
+2. PowerShell is a Shell that parses and executes commands.
+3. A command tells the Shell what to do.
+4. A parameter tells the command how or where to work.
+5. PowerShell uses PATH to find external programs such as java.exe.
