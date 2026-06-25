@@ -58,6 +58,7 @@ english/vocabulary.md
 
 ```text
 notes/day-XX-主题英文短名.md
+practice/day-XX/笔记.md
 practice/day-XX/answer/练习答案.md
 practice/day-XX/answer/验收整理.md
 dictionary/tech-dictionary.md
@@ -113,6 +114,7 @@ english/vocabulary.md
 ```powershell
 Test-Path $PROJECT_ROOT
 Get-ChildItem "$PROJECT_ROOT\notes" -Filter "day-XX*"
+Test-Path "$PROJECT_ROOT\practice\day-XX\笔记.md"
 Get-ChildItem "$PROJECT_ROOT\practice\day-XX" -Recurse
 Select-String -Path "$PROJECT_ROOT\dictionary\tech-dictionary.md" -Pattern "## Day XX"
 Select-String -Path "$PROJECT_ROOT\english\vocabulary.md" -Pattern "## Day XX"
@@ -137,5 +139,7 @@ english/day-XX-*.md
 - 哪些 weekly plan 要求已覆盖。
 
 不要只说“好了”。必须给出可核对的相对路径或实际路径。
+
+
 
 

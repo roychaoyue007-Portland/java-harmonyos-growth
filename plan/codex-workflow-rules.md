@@ -128,6 +128,7 @@ ok
 
 ```text
 notes/day-XX-主题英文短名.md
+practice/day-XX/笔记.md
 practice/day-XX/answer/练习答案.md
 practice/day-XX/answer/验收整理.md
 dictionary/tech-dictionary.md
@@ -170,6 +171,7 @@ english/day-XX-*.md
 
 ```text
 notes/day-XX-*.md 存在
+practice/day-XX/笔记.md 存在
 practice/day-XX/answer/练习答案.md 存在
 practice/day-XX/answer/验收整理.md 存在
 dictionary/tech-dictionary.md 包含 ## Day XX
@@ -196,5 +198,7 @@ english/day-XX-*.md
 - 如果已提交或推送，给出 commit hash。
 
 不要只说“好了”。
+
+
 
 
