@@ -1,4 +1,4 @@
-# 技术英文词汇表
+﻿# 技术英文词汇表
 
 ## Day 01
 
@@ -119,3 +119,38 @@
 3. A command tells the Shell what to do.
 4. A parameter tells the command how or where to work.
 5. PowerShell uses PATH to find external programs such as java.exe.
+
+## Day 09
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| file system | 文件系统 | The file system stores and organizes files. |
+| file | 文件 | A text file can store notes. |
+| folder | 文件夹 | This folder contains my study notes. |
+| directory | 目录 | The current directory is C:\study. |
+| path | 路径 | A path tells the system where a file is. |
+| absolute path | 绝对路径 | C:\study\day09-path-demo\notes\today.txt is an absolute path. |
+| relative path | 相对路径 | .\notes\today.txt is a relative path. |
+| current directory | 当前目录 | The current directory is the starting point for a relative path. |
+| parent directory | 父目录 / 上一级目录 | .. means the parent directory. |
+| root directory | 根目录 | C:\ is a root directory on Windows. |
+| dot | 点 / 当前目录符号 | . means the current directory. |
+| dot dot | 两个点 / 父目录符号 | .. means the parent directory. |
+| backslash | 反斜杠 | Windows paths usually use backslashes. |
+| Resolve-Path | 解析路径 | Resolve-Path converts a relative path to a full path. |
+| path exists | 路径存在 | The path exists, but it may not be accessible. |
+| accessible | 可访问的 | A folder can exist but not be accessible. |
+
+### Day 09 朗读句
+
+1. A file stores data.
+2. A folder can contain files and other folders.
+3. A path describes the location of a file or folder.
+4. An absolute path starts from the root.
+5. A relative path starts from the current directory.
+6. If the current directory changes, the meaning of a relative path may change.
+7. Dot means the current directory.
+8. Dot dot means the parent directory.
+9. Resolve-Path converts a relative path to a full path.
+10. A path can exist but not be accessible.
+
