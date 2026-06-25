@@ -52,7 +52,33 @@ C:\Users\roych\.codex\skills\fullstack-study-prompt\SKILL.md
 
 注意：skill 文件属于本机 Codex 配置，不属于项目仓库；项目内只保存本规则文档和提示词模板。
 
-## 3. 每天开始学习前读取规则
+
+## 3. 继续触发词规则
+
+生成给 ChatGPT 的学习提示词时，必须让 ChatGPT 接受多种继续信号，而不是只接受“继续”。
+
+有效继续信号包括：
+
+```text
+继续
+1
+开始
+下一步
+next
+go
+好的
+ok
+可以
+继续下一阶段
+```
+
+要求：
+
+1. 每个阶段结束后仍必须停下来。
+2. 用户回复上述任意继续信号时，都可以进入下一阶段。
+3. 不要要求用户只能输入“继续”。
+4. 这个规则必须写进每天生成的 ChatGPT prompt。
+## 4. 每天开始学习前读取规则
 
 生成 Day XX 学习计划或提示词前，必须读取：
 
@@ -65,7 +91,7 @@ C:\Users\roych\.codex\skills\fullstack-study-prompt\SKILL.md
 
 必须以 `plan/weekly-plan.md` 中当天安排为准，不得只根据聊天记忆生成。
 
-## 4. 验收通过后归档规则
+## 5. 验收通过后归档规则
 
 用户完成验收并通过后，Codex 必须按 `plan/day-completion-checklist.md` 补全项目文件。
 
@@ -93,7 +119,7 @@ practice/day-XX/技术词典.md
 english/day-XX-*.md
 ```
 
-## 5. 内容完整性检查规则
+## 6. 内容完整性检查规则
 
 写完归档后，必须对照 `plan/weekly-plan.md` 检查当天内容是否完整。
 
@@ -109,7 +135,7 @@ english/day-XX-*.md
 
 如果 weekly plan 中的关键词没有出现在当天归档里，必须先补齐，再汇报完成。
 
-## 6. 路径和冗余检查规则
+## 7. 路径和冗余检查规则
 
 最终汇报前，必须确认：
 
@@ -130,7 +156,7 @@ english/day-XX-*.md
 
 如果发现冗余，应删除或说明为什么保留。
 
-## 7. 最终汇报规则
+## 8. 最终汇报规则
 
 最终回复必须简短说明：
 
@@ -141,3 +167,4 @@ english/day-XX-*.md
 - 如果已提交或推送，给出 commit hash。
 
 不要只说“好了”。
+
