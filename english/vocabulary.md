@@ -154,3 +154,30 @@
 9. Resolve-Path converts a relative path to a full path.
 10. A path can exist but not be accessible.
 
+
+## Day 10
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| standard input | 标准输入 | Standard input is the way a program receives data. |
+| standard output | 标准输出 | Standard output shows the normal result of a command. |
+| standard error | 错误输出 | Standard error shows error messages. |
+| pipeline | 管道 | A pipeline passes output from one command to another command. |
+| redirection | 重定向 | Redirection sends output to another place, such as a file. |
+| output | 输出 | The command output appears in the terminal. |
+| error message | 错误信息 | Read the error message before trying again. |
+| Out-File | 写入文件命令 | Out-File writes command output to a file. |
+| Get-Content | 读取文件内容命令 | Get-Content reads text from a file. |
+| Select-Object | 选择对象属性命令 | Select-Object Name keeps only the Name property. |
+| Where-Object | 筛选对象命令 | Where-Object filters objects by a condition. |
+| property | 属性 | Name and Length are object properties. |
+
+### Day 10 朗读句
+
+1. Standard input is the way a program receives data.
+2. Standard output is the normal result of a command.
+3. Standard error shows error messages.
+4. A pipeline passes output from one command to another command.
+5. Redirection sends output to another place, such as a file.
+6. Out-File writes command output to a file.
+7. Get-Content reads text from a file.
