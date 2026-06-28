@@ -208,3 +208,31 @@
 5. Command resolution finds the executable file for a command name.
 6. Installing software does not always mean the Shell can find its command.
 7. Get-Command and where.exe help me check command resolution.
+
+## Day 12
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| foreground program | 前台程序 | A foreground program needs direct user interaction. |
+| background program | 后台程序 | A background program can keep running without a visible window. |
+| service | 服务 | A service is managed by the system and can run in the background. |
+| listen | 监听 | A process listens on a port and waits for connections. |
+| localhost | 本地主机 | localhost means the current computer. |
+| port | 端口 | Port 8080 can identify a local web service. |
+| process | 进程 | A running program usually has a process. |
+| service status | 服务状态 | A service can be running or stopped. |
+| local address | 本地地址 | The local address shows where the connection is on this computer. |
+| local port | 本地端口 | The local port shows which port is being used. |
+| Get-Process | 查看进程命令 | Get-Process shows running processes. |
+| Get-Service | 查看服务命令 | Get-Service shows Windows services. |
+| Get-NetTCPConnection | 查看 TCP 连接命令 | Get-NetTCPConnection shows TCP connection states. |
+
+### Day 12 朗读句
+
+1. A foreground program needs direct user interaction.
+2. A background program can keep running without a visible window.
+3. A service is managed by the system and often runs in the background.
+4. A process listens on a port and waits for connections.
+5. localhost means the current computer.
+6. localhost with a port means a service entry on the current computer.
+7. Get-Process, Get-Service, and Get-NetTCPConnection help me observe processes, services, and listening ports.
