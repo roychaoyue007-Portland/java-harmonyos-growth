@@ -181,3 +181,30 @@
 5. Redirection sends output to another place, such as a file.
 6. Out-File writes command output to a file.
 7. Get-Content reads text from a file.
+
+## Day 11
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| environment variable | 环境变量 | PATH is an environment variable. |
+| PATH | PATH 环境变量 | PATH tells the Shell where to find external commands. |
+| value | 变量值 | The value of PATH is a list of directories. |
+| scope | 作用范围 | A user-level variable only affects the current user. |
+| command resolution | 命令查找 | Command resolution finds the executable file for a command name. |
+| JAVA_HOME | JAVA_HOME 环境变量 | JAVA_HOME usually points to the JDK installation directory. |
+| user-level variable | 用户级环境变量 | A user-level variable belongs to one user. |
+| system-level variable | 系统级环境变量 | A system-level variable applies to all users on the computer. |
+| executable file | 可执行文件 | java.exe is an executable file. |
+| installation directory | 安装目录 | The installation directory contains the installed software files. |
+| Get-Command | PowerShell 命令查找工具 | Get-Command java shows how PowerShell recognizes java. |
+| where.exe | Windows 命令路径查找工具 | where.exe java lists the java.exe paths found by Windows. |
+
+### Day 11 朗读句
+
+1. An environment variable is a key-value configuration read by programs.
+2. PATH tells the Shell where to find external commands.
+3. The value of PATH is a list of directories.
+4. JAVA_HOME usually points to the JDK installation directory.
+5. Command resolution finds the executable file for a command name.
+6. Installing software does not always mean the Shell can find its command.
+7. Get-Command and where.exe help me check command resolution.
