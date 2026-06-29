@@ -236,3 +236,30 @@
 5. localhost means the current computer.
 6. localhost with a port means a service entry on the current computer.
 7. Get-Process, Get-Service, and Get-NetTCPConnection help me observe processes, services, and listening ports.
+
+## Day 13
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| error message | 错误信息 | Read the error message before trying again. |
+| exit code | 退出码 | An exit code of zero usually means success. |
+| log | 日志 | A log records what happened while a program was running. |
+| reproduce | 复现 | Reproduce the error with clear steps. |
+| troubleshooting | 排错 | Troubleshooting means finding and verifying the cause of a problem. |
+| failure | 失败 | A command failure usually leaves an error message. |
+| cause | 原因 | Find the most likely cause before changing anything. |
+| verify | 验证 | Verify your guess with one clear command. |
+| evidence | 证据 | Logs and error messages are useful evidence. |
+| context | 上下文 | The context around an error can explain what happened. |
+| not found | 未找到 | The file was not found. |
+| not recognized | 无法识别 | The command is not recognized by PowerShell. |
+
+### Day 13 朗读句
+
+1. Read the error message before trying again.
+2. An exit code of zero usually means success.
+3. A non-zero exit code usually means failure.
+4. A log records what happened while a program was running.
+5. Reproduce the error with clear steps.
+6. Troubleshooting means finding and verifying the cause of a problem.
+7. Verify your guess with one clear command.
