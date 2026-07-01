@@ -1,0 +1,8 @@
+{
+  "modelVersion": "5.0.0",
+  "description": "日程管理卡片入口模块",
+  "dependencies": {},
+  "devDependencies": {
+    "@ohos/hypium": "1.0.18"
+  }
+}

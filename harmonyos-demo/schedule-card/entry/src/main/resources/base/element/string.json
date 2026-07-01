@@ -1,0 +1,56 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "日程管理卡片模块"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "日程管理主应用"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "日程管理"
+    },
+    {
+      "name": "form_display_name",
+      "value": "今日日程"
+    },
+    {
+      "name": "form_description",
+      "value": "展示今日日程安排，支持分类切换和滑动浏览"
+    },
+    {
+      "name": "schedule_card_desc",
+      "value": "日程管理卡片"
+    },
+    {
+      "name": "category_work",
+      "value": "工作"
+    },
+    {
+      "name": "category_life",
+      "value": "生活"
+    },
+    {
+      "name": "category_study",
+      "value": "学习"
+    },
+    {
+      "name": "today_schedule",
+      "value": "今日日程"
+    },
+    {
+      "name": "no_schedule",
+      "value": "暂无日程安排"
+    },
+    {
+      "name": "view_detail",
+      "value": "查看详情"
+    },
+    {
+      "name": "completed",
+      "value": "已完成"
+    }
+  ]
+}

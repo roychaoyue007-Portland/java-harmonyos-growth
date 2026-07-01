@@ -1,0 +1,8 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/ScheduleCard2x2",
+    "pages/ScheduleCard2x4",
+    "pages/ScheduleCard4x4"
+  ]
+}
