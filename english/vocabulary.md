@@ -263,3 +263,29 @@
 5. Reproduce the error with clear steps.
 6. Troubleshooting means finding and verifying the cause of a problem.
 7. Verify your guess with one clear command.
+
+## Day 14
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| command execution flow | 命令执行流程 | The command execution flow starts with user input and ends with output or an error. |
+| working directory | 工作目录 / 当前目录 | The working directory affects relative paths. |
+| command lookup | 命令查找 | Command lookup uses PATH to find external programs. |
+| output destination | 输出去向 | Redirection changes the output destination. |
+| troubleshooting steps | 排错步骤 | Follow troubleshooting steps instead of guessing. |
+| root cause | 根本原因 | Find the root cause before changing the environment. |
+| hypothesis | 假设 | Make a hypothesis and verify it with a command. |
+| verify | 验证 | Verify the path with Test-Path. |
+| review | 复盘 | A weekly review connects separate ideas into one flow. |
+| weak point | 薄弱点 | PATH is still a weak point that needs review. |
+
+### Day 14 朗读句
+
+1. The terminal receives input and displays output.
+2. The Shell parses and executes commands.
+3. PATH helps the Shell find external programs.
+4. The working directory affects relative paths.
+5. A pipeline passes output to the next command.
+6. Redirection changes the output destination.
+7. Read the full error message before guessing.
+8. Verify your hypothesis with one clear command.
