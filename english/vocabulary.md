@@ -289,3 +289,55 @@
 6. Redirection changes the output destination.
 7. Read the full error message before guessing.
 8. Verify your hypothesis with one clear command.
+
+## Day 15
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| program startup | 程序启动 | Program startup begins when the user launches an application. |
+| program file | 程序文件 | A program file is stored on disk before it runs. |
+| executable file | 可执行文件 | java.exe is an executable file. |
+| load | 加载 | The operating system loads the program before it runs. |
+| process creation | 进程创建 | Process creation turns a program into a running instance. |
+| running instance | 运行实例 | A process is a running instance of a program. |
+| configuration file | 配置文件 | A configuration file tells the program how to work. |
+| startup failure | 启动失败 | A startup failure can be caused by missing configuration. |
+| dependency | 依赖 | A program may fail if a dependency is missing. |
+| launch | 启动 | Double-clicking an app launches a program. |
+
+### Day 15 朗读句
+
+1. A program file is static content stored on disk.
+2. A process is a running instance of a program.
+3. Double-clicking an app and typing a command both launch a program.
+4. PATH helps the Shell find external commands.
+5. PATH does not guarantee that the program will start successfully.
+6. A startup failure may be caused by parameters, configuration, permissions, ports, or dependencies.
+7. Read the full error message before troubleshooting.
+
+## Day 16
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| runtime condition | 程序运行条件 | A missing configuration file is a runtime condition problem. |
+| argument | 参数 | In java -version, -version is an argument. |
+| configuration | 配置 | Configuration tells a program how to work. |
+| configuration file | 配置文件 | A configuration file stores default rules. |
+| environment variable | 环境变量 | PATH is an environment variable. |
+| current directory | 当前目录 | The current directory affects relative paths. |
+| relative path | 相对路径 | .\abc.txt is a relative path. |
+| permission | 权限 | A permission error means the user cannot access a resource. |
+| port conflict | 端口冲突 / 端口占用 | A port conflict can stop a service from starting. |
+| dependency | 依赖 | A missing dependency can make a program fail. |
+| default value | 默认值 | A configuration file may provide a default value. |
+| runtime environment | 运行环境 | The runtime environment affects how a program runs. |
+
+### Day 16 朗读句
+
+1. A program file can exist but still fail to run.
+2. Arguments tell a program how to run this time.
+3. A configuration file stores long-term rules.
+4. Environment variables provide information from the system or environment.
+5. PATH is one environment variable used to find external commands.
+6. The current directory affects relative paths.
+7. Permissions, ports, and dependencies can also affect program execution.
