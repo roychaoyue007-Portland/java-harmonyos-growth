@@ -341,3 +341,33 @@
 5. PATH is one environment variable used to find external commands.
 6. The current directory affects relative paths.
 7. Permissions, ports, and dependencies can also affect program execution.
+
+## Day 17
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| development environment | 开发环境 | A development environment includes tools, runtime, configuration, and project files. |
+| editor | 编辑器 | An editor is used to write and edit code. |
+| IDE | 集成开发环境 | An IDE can edit, run, and debug a project. |
+| language tool | 语言工具 | The java command is a language tool for Java. |
+| runtime | 运行时 | The JVM is the runtime for Java programs. |
+| project directory | 项目目录 | The project directory contains code and configuration files. |
+| configuration file | 配置文件 | A configuration file tells the project how to run. |
+| environment variable | 环境变量 | PATH is an environment variable used for command lookup. |
+| local service | 本地服务 | A local service runs on the current computer. |
+| local port | 本地端口 | Port 8080 can be a local port for a web service. |
+| localhost | 本地主机 | localhost means the current computer. |
+| toolchain | 工具链 | A toolchain combines tools for building and running a project. |
+| environment check | 环境检查 | An environment check helps find missing tools or wrong configuration. |
+| log | 日志 | Logs help explain why a service failed to start. |
+
+### Day 17 朗读句
+
+1. A development environment is a set of tools and conditions for running a project.
+2. An editor is mainly used to write and edit code.
+3. An IDE can edit, run, and debug a project.
+4. A language tool processes code or starts a program.
+5. A runtime supports a program while it is running.
+6. The project directory affects how tools find code and configuration.
+7. localhost with a port points to a local service entry.
+8. Logs help me troubleshoot startup failures.
