@@ -371,3 +371,31 @@
 6. The project directory affects how tools find code and configuration.
 7. localhost with a port points to a local service entry.
 8. Logs help me troubleshoot startup failures.
+
+## Day 18
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| project startup | 项目启动 | Project startup turns project files into a running program. |
+| startup command | 启动命令 | A startup command starts the local project. |
+| project root directory | 项目根目录 | The project root directory contains code and configuration files. |
+| local run | 本地运行 | A local run starts the project on my computer. |
+| local service | 本地服务 | A local service can listen on a port. |
+| service endpoint | 服务入口 | localhost:8080 can be a service endpoint. |
+| listening port | 监听端口 | A listening port waits for client requests. |
+| startup log | 启动日志 | The startup log shows why the service failed. |
+| startup failure | 启动失败 | A startup failure may be caused by wrong configuration. |
+| configuration | 配置 | Configuration controls how the project runs. |
+| environment variable | 环境变量 | An environment variable provides information to programs. |
+| runtime | 运行时 | The runtime supports the program while it is running. |
+
+### Day 18 朗读句
+
+1. Opening a project directory does not mean the project is running.
+2. A startup command starts the project.
+3. PATH helps the Shell find external commands.
+4. A configuration file can decide which port the service uses.
+5. A service becomes a running process after it starts.
+6. A listening port waits for client requests.
+7. localhost with a port points to a local service endpoint.
+8. Startup logs help me troubleshoot startup failures.
