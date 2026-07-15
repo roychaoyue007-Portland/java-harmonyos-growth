@@ -399,3 +399,30 @@
 6. A listening port waits for client requests.
 7. localhost with a port points to a local service endpoint.
 8. Startup logs help me troubleshoot startup failures.
+
+## Day 19
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| service access failure | 服务访问失败 | A service access failure may mean the service is not listening. |
+| listening port | 监听端口 | A listening port waits for client connections. |
+| process ID | 进程 ID | A process ID identifies a running process. |
+| owning process | 占用端口的进程 | OwningProcess shows the process ID behind a port. |
+| port test | 端口测试 | A port test checks whether a port can be reached. |
+| access address | 访问地址 | localhost:8080 is an access address. |
+| localhost | 本地主机 | localhost means the current computer. |
+| connection test | 连接测试 | Test-NetConnection performs a connection test. |
+| startup log | 启动日志 | The startup log may explain why the service failed. |
+| request | 请求 | The client sends a request to the service. |
+| response | 响应 | The service returns a response to the client. |
+| service endpoint | 服务入口 | A service endpoint includes an address and port. |
+
+### Day 19 朗读句
+
+1. Opening a project does not mean the service is accessible.
+2. A listening port waits for client connections.
+3. OwningProcess shows the process ID behind a port.
+4. If port 8080 is not listening, the service may be stopped or using another port.
+5. Test-NetConnection can test whether localhost port 8080 is reachable.
+6. Logs and error messages help me find the cause.
+7. A troubleshooting checklist can become a full troubleshooting explanation.
