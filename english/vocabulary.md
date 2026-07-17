@@ -426,3 +426,30 @@
 5. Test-NetConnection can test whether localhost port 8080 is reachable.
 6. Logs and error messages help me find the cause.
 7. A troubleshooting checklist can become a full troubleshooting explanation.
+
+## Day 20
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| troubleshooting flow | 排错流程 | A troubleshooting flow helps me find the cause step by step. |
+| symptom | 问题现象 | The symptom is that localhost cannot be reached. |
+| error clue | 错误线索 | The error message contains an important error clue. |
+| hypothesis | 假设 | My hypothesis is that the service uses another port. |
+| verification step | 验证步骤 | A verification step checks whether my hypothesis is correct. |
+| reproduce | 复现 | I need to reproduce the problem before fixing it. |
+| root cause | 根本原因 | The root cause was a wrong port configuration. |
+| environment check | 环境检查 | An environment check includes PATH and JAVA_HOME. |
+| process check | 进程检查 | A process check tells me whether the program is running. |
+| port check | 端口检查 | A port check tells me whether the service is listening. |
+| log analysis | 日志分析 | Log analysis explains what happened before the failure. |
+| evidence | 证据 | Evidence is better than guessing. |
+
+### Day 20 朗读句
+
+1. Troubleshooting starts with the full symptom and error message.
+2. A command can be found but still fail to run correctly.
+3. A running process does not always mean the target port is listening.
+4. A listening port does not always mean the access path is correct.
+5. Logs provide context before and after an error.
+6. A hypothesis must be verified with clear evidence.
+7. Evidence is better than guessing.
