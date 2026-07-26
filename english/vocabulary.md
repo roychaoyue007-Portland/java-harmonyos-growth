@@ -453,3 +453,26 @@
 5. Logs provide context before and after an error.
 6. A hypothesis must be verified with clear evidence.
 7. Evidence is better than guessing.
+
+## Day 21
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| weekly review | 周复盘 | A weekly review connects separate concepts into one flow. |
+| complete flow | 完整链路 | The complete flow goes from program files to local service access. |
+| review checkpoint | 复盘检查点 | A review checkpoint helps me find weak points. |
+| weak point | 薄弱点 | OwningProcess is still a weak point. |
+| correction | 修正 | A correction turns a vague answer into a technical answer. |
+| local development | 本地开发 | Local development often uses localhost and ports. |
+| concept map | 概念关系图 | A concept map shows how process, port, and localhost connect. |
+| monthly review | 月末复习 | Monthly review will revisit the weak points from Week03. |
+
+### Day 21 朗读句
+
+1. A weekly review connects separate concepts into one flow.
+2. Opening a project does not mean the project is running.
+3. A local service becomes a process after it starts.
+4. A listening port waits for client connection requests.
+5. OwningProcess shows the process ID behind a port.
+6. A complete troubleshooting flow starts with the full error message.
+7. Weak points should be reviewed again at the end of the month.
