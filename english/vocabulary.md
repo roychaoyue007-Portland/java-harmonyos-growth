@@ -476,3 +476,34 @@
 5. OwningProcess shows the process ID behind a port.
 6. A complete troubleshooting flow starts with the full error message.
 7. Weak points should be reviewed again at the end of the month.
+
+## Day 22
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| CPU | 中央处理器 | The CPU executes instructions from a running process. |
+| memory | 内存 | A process uses memory while it is running. |
+| RAM | 随机访问内存 | RAM provides temporary space for running programs. |
+| disk | 硬盘 / 磁盘 | The disk stores program files and data. |
+| SSD | 固态硬盘 | An SSD stores files for long-term use. |
+| operating system | 操作系统 | The operating system creates and manages processes. |
+| program file | 程序文件 | A program file is stored on disk before it runs. |
+| process | 进程 | A process is a running instance of a program. |
+| process ID | 进程 ID | A process ID identifies a running process. |
+| PID | 进程编号 | PID is short for process ID. |
+| working set | 工作集 / 当前占用内存 | Working set shows memory used by a process. |
+| resource | 资源 | CPU time and memory are system resources. |
+| instruction | 指令 | The CPU executes program instructions. |
+| allocate | 分配 | The operating system allocates memory to a process. |
+| schedule | 调度 | The operating system schedules CPU time for processes. |
+
+### Day 22 朗读句
+
+1. A program file is stored on disk before it runs.
+2. A process is a running instance of a program.
+3. The operating system creates a process when a program starts.
+4. The operating system allocates memory to a process.
+5. The CPU executes instructions from a running process.
+6. Memory is temporary space for running programs.
+7. Disk is used for long-term storage.
+8. A background process is still running.

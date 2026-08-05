@@ -1,391 +1,171 @@
-# Week 02 学习计划：命令行操作与基础排错
+# Week 04 学习计划：操作系统资源与程序运行收尾
 
-周期：Day 08～Day 14  
-计划开始：2026-06-23  
+周期：Day 22～Day 28  
+计划开始：2026-08-05  
 当前阶段：Month 01——计算机导论与操作系统入门  
-建议学习时间：每天 3～3.5 小时，Day 14 为 2～3 小时
+建议学习时间：每天 3～4 小时，Day 28 为 2～3 小时
 
 ## 编号规则
 
-- 全程使用连续编号：Day 08、Day 09……
-- Week 02 · Day 01 只表示周内位置，不用于文件夹主编号。
+- 全程使用连续编号：Day 22、Day 23……
+- Week 04 · Day 01 只表示周内位置，不用于文件夹主编号。
 - 进入新周或新月时不重置 Day，避免笔记、练习和验收文件重名。
 
 ## 本周定位
 
-Week 01 解决的是：听懂文件、程序、进程、编译、网络等基础词。
+Week 03 解决的是：把程序启动、运行条件、开发环境、本地服务、监听端口、localhost 访问失败和综合排错串成一条链路。
 
-Week 02 解决的是：能在命令行中操作电脑、理解命令执行过程，并对常见问题进行基础排查。
+Week 04 解决的是：回到操作系统基础，把 CPU、内存、硬盘、进程、资源管理、文件读写和程序运行条件再补扎实，为 Month 02 的 Java 基础学习做收尾准备。
 
 本周暂不进入：
 
 - Java 变量、判断、循环等语法。
 - Spring Boot、数据库、Vue、鸿蒙页面开发。
-- Git 分支、合并和团队协作。
-- PowerShell 高级脚本、系统管理和网络底层原理。
+- Git 分支、合并、提交和 GitHub 协作。
+- 操作系统内核源码、线程调度、虚拟内存、页表等底层细节。
 
 ## 本周目标
 
-- 分清终端、Shell、PowerShell、命令和参数。
-- 熟练使用绝对路径、相对路径、当前目录和父目录。
-- 理解标准输入、标准输出、错误输出、管道和重定向。
-- 准确理解环境变量、PATH 以及命令查找过程。
-- 理解前台程序、后台程序、服务、监听和端口。
-- 学会阅读错误信息、检查退出码和查看基础日志。
-- 建立一套可重复使用的基础排错流程。
+- 能区分 CPU、内存、硬盘和操作系统的职责。
+- 能解释程序文件从硬盘进入运行状态时，操作系统如何创建进程并分配资源。
+- 能理解进程 ID、CPU 占用、内存占用和硬盘存储不是同一类概念。
+- 能把 Day15～Day21 的程序启动链路接到操作系统资源管理模型上。
+- 能继续用安全的 PowerShell 命令观察进程、资源和本地服务。
+- 能形成 Month01 收尾复习清单，为 Java 编程基础做准备。
 
-## Day 08（Week 02 · Day 01）
+## Day 22（Week 04 · Day 01）
 
 ### 主题
 
-终端、Shell、PowerShell、命令与参数。
+操作系统如何管理程序运行：CPU、内存、硬盘、程序文件与进程之间的关系。
 
 ### 核心问题
 
 ```text
-我在终端中输入一条命令并按下 Enter 后，电脑是怎样理解并执行它的？
+一个程序从硬盘上的文件变成正在运行的进程时，CPU、内存、硬盘和操作系统分别做了什么？
 ```
 
 ### 核心词
 
-- 终端（Terminal）
-- Shell
-- PowerShell
-- 命令（Command）
-- 参数（Parameter / Argument）
+- CPU
+- Memory / RAM
+- Disk / Hard Drive / SSD
+- Operating System
+- Program File
+- Process
+- Process ID / PID
+- Working Set
+- Resource
 
 ### 动手任务
 
 ```powershell
-$PSVersionTable.PSVersion
 Get-Location
-Get-Command Get-ChildItem
+Get-Process | Select-Object -First 10
+Get-Process | Sort-Object CPU -Descending | Select-Object -First 10 Name,Id,CPU,WorkingSet
+Get-Process | Sort-Object WorkingSet -Descending | Select-Object -First 10 Name,Id,CPU,WorkingSet
+Get-CimInstance Win32_OperatingSystem | Select-Object TotalVisibleMemorySize,FreePhysicalMemory
+Get-Volume
 Get-Command java
-Get-Help Get-ChildItem -Examples
-Get-ChildItem -Path . -File
 java -version
+Get-NetTCPConnection -State Listen | Select-Object -First 10 LocalAddress,LocalPort,State,OwningProcess
 ```
 
 重点观察：
 
-- 终端和 PowerShell 为什么不是同一个东西。
-- PowerShell 内置命令和外部 `.exe` 的区别。
-- 命令名、参数名和参数值怎样组合。
-- `Get-Command` 与 `Get-Help` 分别解决什么问题。
+- `Get-Process` 看到的是正在运行的进程，不是硬盘上的程序文件列表。
+- `Id` 是进程编号，帮助操作系统和用户区分不同进程。
+- `CPU` 反映进程使用 CPU 的累计情况，不代表程序文件大小。
+- `WorkingSet` 可以粗略理解为进程当前占用的一部分物理内存。
+- 硬盘容量和内存容量不是同一个概念。
+- `java -version` 会启动 Java 程序并输出版本信息。
+- `Get-Command java` 是查看 Shell 能不能找到 Java 命令的位置。
 
 ### 验收重点
 
-- 能拆解 `Get-ChildItem -Path . -File`。
-- 能说明输入 `java -version` 后发生了什么。
-- 能解释 PATH 在外部命令查找中的作用。
+- 能区分 CPU、内存、硬盘和操作系统的职责。
+- 能清楚区分程序文件和进程。
+- 能解释为什么程序运行不是“文件自己动起来”。
+- 能把 Day15 到 Day21 学过的程序启动、进程、本地服务和今天的操作系统资源关系连接起来。
 
 ### 文件
 
-- 学习任务：`day-08-study-task.md`
-- 正式笔记建议：`notes/day-08-terminal-shell-powershell-command-parameter.md`
-- 练习目录建议：`practice/day-08/`
+- 正式笔记：`notes/day-22-cpu-memory-disk-os-process.md`
+- 练习笔记：`practice/day-22/笔记.md`
+- 练习答案：`practice/day-22/answer/练习答案.md`
+- 验收整理：`practice/day-22/answer/验收整理.md`
 
-## Day 09（Week 02 · Day 02）
+## Day 23（Week 04 · Day 02，待学习）
 
-### 主题
+### 预备主题
 
-文件系统、绝对路径、相对路径、当前目录与父目录。
+文件读写与程序输入输出：程序如何从文件、终端和网络获得数据。
 
-### 核心问题
-
-```text
-同一个文件为什么既可以用完整路径找到，也可以用较短的相对路径找到？
-```
-
-### 核心词
-
-- 文件系统（File System）
-- 绝对路径（Absolute Path）
-- 相对路径（Relative Path）
-- 当前目录（Current Directory）
-- 父目录（Parent Directory）
-
-### 动手任务
-
-```powershell
-Get-Location
-Get-ChildItem .
-Get-ChildItem ..
-Set-Location ..
-Set-Location .\day-07
-Resolve-Path .
-Resolve-Path ..
-Test-Path .\outputs\day-08-study-task.md
-```
-
-重点观察：
-
-- `.`、`..`、`\` 分别表示什么。
-- 相对路径为什么依赖当前目录。
-- `Resolve-Path` 怎样把相对路径转换为完整路径。
-- 路径存在和路径可访问为什么不是同一件事。
-
-### 验收重点
-
-- 能区分绝对路径和相对路径。
-- 能根据当前目录判断 `.` 和 `..` 指向哪里。
-- 能解释“工作目录不存在”或“找不到路径”的原因。
-
-## Day 10（Week 02 · Day 03）
-
-### 主题
-
-标准输入、标准输出、错误输出、管道与重定向。
-
-### 核心问题
+### 预备核心问题
 
 ```text
-命令产生的结果去了哪里，又怎样把一个命令的结果交给另一个命令？
+程序运行时的数据从哪里来，又会被输出到哪里？
 ```
 
-### 核心词
+## Day 24（Week 04 · Day 03，待学习）
 
-- 标准输入（Standard Input）
-- 标准输出（Standard Output）
-- 错误输出（Standard Error）
-- 管道（Pipeline）
-- 重定向（Redirection）
+### 预备主题
 
-### 动手任务
+操作系统权限、用户和进程访问资源。
 
-```powershell
-Write-Output "hello"
-Get-ChildItem | Select-Object Name
-Get-ChildItem | Where-Object Length -GT 0
-Get-ChildItem | Out-File .\work\file-list.txt
-Get-Content .\work\file-list.txt
-```
-
-再故意输入一个不存在的命令，观察正常结果与错误信息的区别。
-
-重点观察：
-
-- `|` 左边的输出怎样成为右边的输入。
-- 终端显示内容与写入文件有什么不同。
-- PowerShell 管道传递对象，初学阶段先理解为“把结果交给下一步”。
-
-### 验收重点
-
-- 能说明输入、输出和错误输出的区别。
-- 能解释管道和重定向分别解决什么问题。
-- 能读懂一条包含 `|` 的简单命令。
-
-## Day 11（Week 02 · Day 04）
-
-### 主题
-
-环境变量、PATH、作用范围、配置与命令查找。
-
-### 核心问题
+### 预备核心问题
 
 ```text
-为什么同一条命令在一台电脑上能运行，换一台电脑却可能提示找不到？
+为什么文件或端口明明存在，程序却可能没有权限访问？
 ```
 
-### 核心词
+## Day 25（Week 04 · Day 04，待学习）
 
-- 环境变量（Environment Variable）
-- PATH
-- 变量值（Value）
-- 作用范围（Scope）
-- 命令查找（Command Resolution）
+### 预备主题
 
-### 动手任务
+安装、配置、环境变量和开发工具的综合复习。
 
-```powershell
-$env:PATH
-$env:JAVA_HOME
-[Environment]::GetEnvironmentVariable('PATH', 'User')
-[Environment]::GetEnvironmentVariable('PATH', 'Machine')
-Get-Command java
-where.exe java
-```
-
-只观察，不修改系统或用户环境变量。
-
-重点观察：
-
-- PATH 本身就是一个环境变量。
-- PATH 的值由多个目录组成。
-- 用户级与系统级配置可能不同。
-- 安装了软件，不代表 Shell 一定能找到它。
-
-### 验收重点
-
-- 能完整说明 PowerShell 怎样找到 `java.exe`。
-- 能区分安装路径、JAVA_HOME 和 PATH。
-- 能提出“命令不存在”时的基础检查步骤。
-
-## Day 12（Week 02 · Day 05）
-
-### 主题
-
-前台程序、后台程序、服务、监听与本机端口。
-
-### 核心问题
+### 预备核心问题
 
 ```text
-为什么有些程序关掉窗口就结束，而有些服务能一直在后台等待请求？
+为什么软件安装好了，项目仍然可能因为配置或环境不正确而运行失败？
 ```
 
-### 核心词
+## Day 26（Week 04 · Day 05，待学习）
 
-- 前台程序（Foreground Program）
-- 后台程序（Background Program）
-- 服务（Service）
-- 监听（Listen）
-- 本地主机（localhost）
+### 预备主题
 
-### 动手任务
+从命令行到 IDE：同一个项目为什么可以用不同入口启动。
 
-```powershell
-Get-Process
-Get-Service | Select-Object -First 10
-Get-NetTCPConnection -State Listen | Select-Object -First 10
-```
-
-可选：启动一个简单的本地 HTTP 服务，再观察它监听的端口。只在学习目录中操作，完成后主动停止服务。
-
-重点观察：
-
-- 进程和服务有什么关系。
-- “监听端口”为什么表示正在等待连接。
-- `localhost` 为什么代表当前电脑。
-- 关闭窗口、停止进程和停止服务有什么区别。
-
-### 验收重点
-
-- 能说明前台程序和后台程序的区别。
-- 能解释服务、进程、监听和端口之间的关系。
-- 能说明 `localhost:端口` 表示什么。
-
-## Day 13（Week 02 · Day 06）
-
-### 主题
-
-错误信息、退出码、日志与基础排错流程。
-
-### 核心问题
+### 预备核心问题
 
 ```text
-命令执行失败时，我应该从哪里开始查，而不是盲目重试？
+命令行启动和 IDE 启动项目时，哪些步骤相同，哪些条件可能不同？
 ```
 
-### 核心词
+## Day 27（Week 04 · Day 06，待学习）
 
-- 错误信息（Error Message）
-- 退出码（Exit Code）
-- 日志（Log）
-- 复现（Reproduce）
-- 排错（Troubleshooting）
+### 预备主题
 
-### 动手任务
+Month01 综合排错训练：从现象到证据再到结论。
 
-故意制造并观察三类安全错误：
-
-```powershell
-Get-ChildItem .\not-exist-folder
-not-a-real-command
-java NotExistClass
-$LASTEXITCODE
-```
-
-按固定流程记录：
+### 预备核心问题
 
 ```text
-我执行了什么
-    → 完整错误是什么
-    → 哪个关键词最重要
-    → 当前路径和环境是什么
-    → 最可能的原因是什么
-    → 我怎样验证这个原因
+面对一个本地项目启动或访问失败的问题，我能否按固定流程独立排查？
 ```
 
-重点观察：
+## Day 28（Week 04 · Day 07，待学习）
 
-- 路径不存在、命令不存在和 Java 类不存在是三类不同问题。
-- 错误信息中的路径、命令名和异常名通常是线索。
-- PowerShell 命令与外部程序的退出状态表现可能不同，今天只建立初步认识。
+### 预备主题
 
-### 验收重点
+Month01 月末复盘：计算机基础、操作系统和本地开发环境总验收。
 
-- 能保留并复述完整错误，而不是只说“报错了”。
-- 能区分问题现象、可能原因和验证步骤。
-- 能使用固定流程排查一个简单错误。
-
-## Day 14（Week 02 · Day 07）
-
-### 主题
-
-第二周复盘：从输入命令到排查失败。
-
-### 核心问题
+### 预备核心问题
 
 ```text
-我能否独立执行、理解并排查一条基础命令？
+我是否已经准备好进入 Month02 的 Java 编程基本功？
 ```
-
-### 复盘任务
-
-1. 闭卷写出 Day 08～Day 13 的主题与关键词。
-2. 画出命令执行总流程：
-
-```text
-终端输入
-    → Shell 解析命令和参数
-    → 内置命令或 PATH 查找外部程序
-    → 操作系统创建或调用进程
-    → 程序接收输入并执行
-    → 产生正常输出或错误输出
-    → 通过终端、管道、文件或日志查看结果
-```
-
-3. 完成一次综合练习：
-
-```powershell
-Get-Location
-Get-Command java
-java -version
-Get-ChildItem -Path . -File | Select-Object Name
-Get-ChildItem -Path . -File | Out-File .\work\week-02-files.txt
-Get-Content .\work\week-02-files.txt
-```
-
-4. 故意输入错误路径或错误命令，按 Day 13 流程完成排错记录。
-5. 整理本周技术词典，找出最薄弱的 3 个词。
-
-### 周验收重点
-
-- 能区分终端、Shell、PowerShell、命令和参数。
-- 能正确使用绝对路径与相对路径。
-- 能解释管道、重定向、PATH 和命令查找。
-- 能解释前台程序、后台程序、服务与监听端口。
-- 能按固定步骤排查路径不存在或命令不存在的问题。
-
-### Week 02 通过标准
-
-- 综合验收达到 80 分。
-- 六天动手练习至少完成五天。
-- 技术词典新增或修订不少于 20 个词。
-- 能独立完成一份包含“命令、结果、错误、原因、验证”的排错记录。
-
-## 每日统一学习结构
-
-除 Day 14 外，每天采用：
-
-1. 前一天复习：15 分钟。
-2. 概念理解：45～50 分钟。
-3. 核心关系或生活类比：25～30 分钟。
-4. 动手练习：60 分钟。
-5. 技术词典：25～30 分钟。
-6. 今日笔记：30 分钟。
-7. 验收测试：30～40 分钟。
-8. 复盘：10～15 分钟。
 
 ## 每日统一产出
 
@@ -394,11 +174,3 @@ Get-Content .\work\week-02-files.txt
 - 1 份今日笔记。
 - 1 份验收答案。
 - 1 段简短复盘。
-
-## Week 02 最终成果
-
-- [ ] Day 08～Day 13 六份学习笔记。
-- [ ] Day 08～Day 13 六份操作练习或排错记录。
-- [ ] 技术词典新增或修订至少 20 个词。
-- [ ] 一张命令执行完整流程图。
-- [ ] 一份 Week 02 周总结与验收结果。
