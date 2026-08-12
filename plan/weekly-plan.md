@@ -95,17 +95,77 @@ Get-NetTCPConnection -State Listen | Select-Object -First 10 LocalAddress,LocalP
 - 练习答案：`practice/day-22/answer/练习答案.md`
 - 验收整理：`practice/day-22/answer/验收整理.md`
 
-## Day 23（Week 04 · Day 02，待学习）
+## Day 23（Week 04 · Day 02）
 
-### 预备主题
+### 主题
 
 文件读写与程序输入输出：程序如何从文件、终端和网络获得数据。
 
-### 预备核心问题
+### 核心问题
 
 ```text
 程序运行时的数据从哪里来，又会被输出到哪里？
 ```
+
+### 核心词
+
+- Input
+- Output
+- File Input
+- File Output
+- Read
+- Write
+- Append
+- Standard Input
+- Standard Output
+- Standard Error
+- Pipeline
+- Redirection
+- Data Flow
+
+### 动手任务
+
+```powershell
+Get-Location
+New-Item -ItemType Directory -Force .\practice\day-23
+Set-Content .\practice\day-23\input.txt "hello day 23"
+Get-Content .\practice\day-23\input.txt
+Write-Output "this is terminal output"
+Write-Output "this is file output" | Out-File .\practice\day-23\output.txt
+Get-Content .\practice\day-23\output.txt
+Add-Content .\practice\day-23\output.txt "second line"
+Get-Content .\practice\day-23\output.txt
+Get-Content .\practice\day-23\output.txt | Select-Object -First 1
+Get-Content .\practice\day-23\output.txt | Measure-Object -Line
+Get-Content .\practice\day-23\not-exist.txt
+```
+
+重点观察：
+
+- `Get-Content` 是读取文件内容。
+- `Set-Content` 是覆盖写入文件。
+- `Add-Content` 是追加写入文件。
+- `Write-Output` 默认把内容输出到终端或管道。
+- `Out-File` 可以把输出写入文件。
+- 管道 `|` 可以把一个命令的输出交给下一个命令。
+- 文件在硬盘上，不等于程序已经读到了文件内容。
+- 终端显示内容，不等于内容已经保存进文件。
+- 错误信息也是一种输出线索，但它和正常输出不同。
+
+### 验收重点
+
+- 能区分输入和输出。
+- 能区分文件输入、终端输入和网络输入。
+- 能区分终端输出、文件输出和错误输出。
+- 能解释 `Get-Content`、`Set-Content`、`Add-Content`、`Out-File` 的基本作用。
+- 能把 Day10 的标准输入输出、管道、重定向和 Day22 的硬盘、内存、进程关系连接起来。
+
+### 文件
+
+- 正式笔记：`notes/day-23-file-input-output.md`
+- 练习笔记：`practice/day-23/笔记.md`
+- 练习答案：`practice/day-23/answer/练习答案.md`
+- 验收整理：`practice/day-23/answer/验收整理.md`
 
 ## Day 24（Week 04 · Day 03，待学习）
 

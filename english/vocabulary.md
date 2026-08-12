@@ -507,3 +507,36 @@
 6. Memory is temporary space for running programs.
 7. Disk is used for long-term storage.
 8. A background process is still running.
+
+## Day 23
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| input | 输入 | Input is data that enters a program. |
+| output | 输出 | Output is data produced by a program. |
+| file input | 文件输入 | File input reads data from a file. |
+| file output | 文件输出 | File output writes data to a file. |
+| read | 读取 | Get-Content reads text from a file. |
+| write | 写入 | Out-File writes command output to a file. |
+| append | 追加 | Add-Content appends a new line to a file. |
+| standard input | 标准输入 | Standard input is a default input channel. |
+| standard output | 标准输出 | Standard output shows normal command results. |
+| standard error | 标准错误 / 错误输出 | Standard error shows error messages. |
+| pipeline | 管道 | A pipeline passes output to the next command. |
+| redirection | 重定向 | Redirection changes where output goes. |
+| data flow | 数据流 | Data flow describes where data comes from and where it goes. |
+| terminal output | 终端输出 | Terminal output is shown on the screen. |
+| saved file | 已保存文件 | A saved file stores data on disk. |
+
+### Day 23 朗读句
+
+1. Input is data that enters a program.
+2. Output is data produced by a program.
+3. A file can exist on disk before a program reads it.
+4. Get-Content reads data from a file.
+5. Set-Content overwrites file content.
+6. Add-Content appends new content to a file.
+7. Terminal output is temporary display.
+8. File output saves data to disk.
+9. A pipeline passes output to the next command.
+10. Error output gives clues for troubleshooting.
