@@ -167,17 +167,77 @@ Get-Content .\practice\day-23\not-exist.txt
 - 练习答案：`practice/day-23/answer/练习答案.md`
 - 验收整理：`practice/day-23/answer/验收整理.md`
 
-## Day 24（Week 04 · Day 03，待学习）
+## Day 24（Week 04 · Day 03）
 
-### 预备主题
+### 主题
 
 操作系统权限、用户和进程访问资源。
 
-### 预备核心问题
+### 核心问题
 
 ```text
 为什么文件或端口明明存在，程序却可能没有权限访问？
 ```
+
+### 核心词
+
+- User
+- Current User
+- Administrator
+- Permission
+- Resource
+- File Permission
+- Access
+- Denied
+- Read Permission
+- Write Permission
+- Process Identity
+- Security Rule
+- System Directory
+- Permission Error
+
+### 动手任务
+
+```powershell
+Get-Location
+New-Item -ItemType Directory -Force .\practice\day-24
+whoami
+Get-ChildItem .\practice\day-24
+Set-Content .\practice\day-24\permission-demo.txt "day 24 permission demo"
+Get-Content .\practice\day-24\permission-demo.txt
+Get-Item .\practice\day-24\permission-demo.txt | Select-Object FullName,Length,Attributes,LastWriteTime
+Get-Content .\practice\day-24\not-exist.txt
+Get-ChildItem C:\Windows | Select-Object -First 5 Name,Mode,LastWriteTime
+Set-Content .\practice\day-24\write-test.txt "write ok"
+Get-Content .\practice\day-24\write-test.txt
+Get-NetTCPConnection -State Listen | Select-Object -First 10 LocalAddress,LocalPort,State,OwningProcess
+Get-Process -Id 进程ID
+```
+
+重点观察：
+
+- `whoami` 显示当前用户。
+- 当前用户能读写学习目录，不代表能读写所有系统目录。
+- 文件存在、路径正确、用户有权限，是不同条件。
+- `Get-Content` 失败时，要看是路径不存在、权限不足，还是其他错误。
+- 程序或命令以某个用户身份运行，访问资源时会受到权限限制。
+- `OwningProcess` 仍然是占用端口的进程 ID。
+- 进程存在、端口监听、访问成功是不同层次。
+
+### 验收重点
+
+- 能解释用户、进程、资源、权限的基本关系。
+- 能区分文件存在、路径正确、权限允许。
+- 能区分读取权限和写入权限。
+- 能说明权限错误和路径不存在不是同一类问题。
+- 能把 Day22 的操作系统资源管理、Day23 的文件读写和 Week03 的服务访问失败排查连接起来。
+
+### 文件
+
+- 正式笔记：`notes/day-24-user-permission-process-resource.md`
+- 练习笔记：`practice/day-24/笔记.md`
+- 练习答案：`practice/day-24/answer/练习答案.md`
+- 验收整理：`practice/day-24/answer/验收整理.md`
 
 ## Day 25（Week 04 · Day 04，待学习）
 

@@ -540,3 +540,36 @@
 8. File output saves data to disk.
 9. A pipeline passes output to the next command.
 10. Error output gives clues for troubleshooting.
+
+## Day 24
+
+| English | 中文 | 例子 |
+| --- | --- | --- |
+| user | 用户 | A user is an identity in the operating system. |
+| current user | 当前用户 | The current user affects file access. |
+| administrator | 管理员 | An administrator has higher system permissions. |
+| permission | 权限 | Permission controls whether access is allowed. |
+| resource | 资源 | Files, ports, memory, and processes are resources. |
+| file permission | 文件权限 | File permission controls reading and writing files. |
+| access | 访问 | A process tries to access a file or port. |
+| denied | 被拒绝 | Access is denied when permission is missing. |
+| read permission | 读取权限 | Read permission allows reading file content. |
+| write permission | 写入权限 | Write permission allows writing file content. |
+| process identity | 进程身份 | A process runs with a user identity. |
+| security rule | 安全规则 | A security rule can block resource access. |
+| system directory | 系统目录 | C:\Windows is a system directory. |
+| permission error | 权限错误 | A permission error is different from a missing path. |
+| access denied | 访问被拒绝 | Access denied means the system blocks the operation. |
+
+### Day 24 朗读句
+
+1. A user is an identity in the operating system.
+2. The current user affects file access.
+3. A process runs with a user identity.
+4. Permission controls whether access is allowed.
+5. A file can exist, but access can still be denied.
+6. A correct path does not always mean write permission.
+7. Files, ports, memory, and processes are resources.
+8. A permission error is different from a missing path.
+9. The operating system checks resource access.
+10. Access denied means the operation is not allowed.
